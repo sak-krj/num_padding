@@ -4,5 +4,5 @@ services:
     build: ./docker
     container_name: py
     volumes:
-      - .:.
+      - .:/root/num_padding
     tty: true
