@@ -1,8 +1,8 @@
 version: '3'
 services:
-  py:
+  conda3:
     build: ./docker
-    container_name: py
     volumes:
       - .:/root/num_padding
-    tty: true
+    ports:
+      - 8888:8888
